@@ -1,0 +1,176 @@
+@import "buttons";
+@import "settingsPage";
+
+html {
+	overflow: hidden !important;
+}
+
+p {
+	font-size: 18px;
+}
+
+#app {
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #e0e0e0;
+	background: url("./assets/images/logo.png");
+	background-repeat: no-repeat;
+	background-size: 40%;
+	background-position: center;
+}
+
+.barrel_roll {
+	animation: rotate 4s ease-in-out;
+
+	@keyframes rotate {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(359deg);
+		}
+	}
+}
+
+.font-size-inherit {
+	font-size: inherit;
+}
+
+._vue-flash-msg-body {
+	margin-bottom: 0px;
+	margin-right: -12px;
+	z-index: 1000 !important;
+
+	&__content {
+		padding-right: 5px;
+
+		._vue-flash-msg-body__title {
+			margin-top: 16px;
+			margin-bottom: 16px;
+			font-weight: bold;
+		}
+	}
+}
+
+.searchbar {
+	&--general {
+		.v-input__control {
+			.v-input__slot {
+				background-color: #fff !important;
+
+				.v-input__prepend-inner {
+					color: #163450;
+				}
+			}
+		}
+
+		&.v-input--is-focused {
+			.v-input__control {
+				.v-input__slot {
+					.v-input__prepend-inner {
+						color: #3486d7;
+					}
+
+					fieldset {
+						border: 1px solid #3486d7;
+					}
+				}
+			}
+		}
+	}
+
+	&--settings {
+		.v-input__control {
+			.v-input__slot {
+				&::before {
+					border-color: #163450 !important;
+				}
+
+				.v-input__append-inner {
+					color: #163450;
+				}
+			}
+		}
+
+		&.v-input--is-focused {
+			.v-input__control {
+				.v-input__slot {
+					&::before {
+						border-color: #3486d7 !important;
+					}
+
+					.v-input__append-inner {
+						color: #3486d7;
+					}
+				}
+			}
+		}
+	}
+
+	.v-input__control {
+		.v-input__slot {
+			background-color: #fff !important;
+
+			.v-input__prepend-inner {
+				color: #163450;
+			}
+
+			fieldset {
+				border: 1px solid #163450;
+			}
+		}
+	}
+
+	&.v-input--is-focused {
+		.v-input__control {
+			.v-input__slot {
+				.v-input__prepend-inner {
+					color: #3486d7;
+				}
+
+				fieldset {
+					border: 1px solid #3486d7;
+				}
+			}
+		}
+	}
+}
+
+.v-data-table {
+	.v-data-footer {
+		.v-data-footer__select {
+			.v-input {
+				margin: 12px !important;
+				.v-input__control {
+					.v-select__slot {
+						.v-select__selections {
+							padding-left: 12px;
+						}
+					}
+				}
+			}
+		}
+		.v-data-footer__pagination {
+			display: none;
+		}
+	}
+}
+
+.v-input__control {
+	font-size: 20px;
+
+	svg {
+		font-size: 20px;
+		margin-right: 10px;
+	}
+
+	.v-label {
+		font-size: 18.5px;
+	}
+
+	.v-messages__message {
+		font-size: 15px;
+		padding: 2px 0;
+	}
+}

@@ -1,0 +1,39 @@
+.button {
+	font-size: 19px !important;
+	font-weight: bold !important;
+
+	&--main {
+		@extend .button;
+		background-color: #c7d7dd !important;
+	}
+
+	&--sec {
+		@extend .button;
+		background-color: #163450 !important;
+		color: #eee !important;
+	}
+
+	&--ter {
+		font-size: 16px !important;
+		color: #435d74 !important;
+		text-decoration: underline !important;
+		background-color: transparent !important;
+	}
+
+	&--danger {
+		font-size: 16px !important;
+		color: #cc2836 !important;
+		background-color: #fefefe !important;
+	}
+
+	&--special {
+		font-size: 16px !important;
+		color: #2e73af !important;
+		background-color: #fefefe !important;
+		font-weight: bold !important;
+
+		&.theme--light.v-btn.v-btn--disabled:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {
+			background-color: #fefefe !important;
+		}
+	}
+}
